@@ -1,16 +1,10 @@
-let indicator = $('.movable-indicator');
-$('.nav-i').each(
-    function(){
-        $(this).click(function(){
-            var left_distance = $(this).position().left; 
-            var element_width = $(this).outerWidth();    
-            
-            $(this).siblings().removeClass('is-active');
-            $(this).addClass('is-active');
+$(window).scroll(function() {
+    $('.fadedfx').each(function(){
+    var imagePos = $(this).offset().top;
 
-            indicator.css('background-color', $(this).data('color'));
-            indicator.css('width', element_width);
-            indicator.css('left', left_distance);
-        })
-    }
-);
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+500) {
+            $(this).addClass("fadeIn");
+        }
+    });
+});
