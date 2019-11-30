@@ -2124,3 +2124,8 @@ p.entry-content {
 }
 
 
+.head{
+	background-image: url('/Thailandfood/assets/images/background1.png');
+	background-position: center;
+	background-repeat: no-repeat;
+}
