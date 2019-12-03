@@ -2129,3 +2129,13 @@ p.entry-content {
 	background-position: center;
 	background-repeat: no-repeat;
 }
+.text{
+	background-image: url('/Thailandfood/assets/images/1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 80px;
+}
+.text h1{
+	color: white;
+	line-height: 75px;
+}
